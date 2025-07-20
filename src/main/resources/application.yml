@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: telegram_sender
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+    hibernate:
+      ddl-auto: update
+
+api:
+  sender:
+    internal-url: ${API_BASE_URL}
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 3600000
+
+telegram:
+  bot:
+    token: ${BOT_TOKEN}
+    username: ${BOT_USERNAME}

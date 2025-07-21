@@ -49,7 +49,7 @@ cp .env.example .env
 | `DB_URL`           | URL к базе данных                     | `jdbc:h2:file:./data/sender_db` |
 | `DB_USERNAME`      | Логин для базы                        | `sa`                            |
 | `DB_PASSWORD`      | Пароль для базы                       | `sa`                            |
-| `JWT_SECRET`       | Секрет для генерации JWT              | `super_secret_key`              |
+| `JWT_SECRET`       | Секрет для генерации JWT (HS512)      | `super_secret_key`              |
 | `API_INTERNAL_URL` | URL для внутренних вызовов бота к API | `http://localhost:8080`         |
 | `BOT_TOKEN`        | Токен Telegram-бота                   | `123456:ABC-DEF1234`            |
 | `BOT_USERNAME`     | Username бота                         | `your_bot_username`             |
